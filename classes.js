@@ -3,14 +3,15 @@
 // https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded
 document.addEventListener('DOMContentLoaded', start)
 
-function start () {
+function start() {
   // The first example is done for you. Uncomment the line below and reload the browser.
-  // one()
-    
+  one()
+  two()
+
   // Your turn! Create a new function called `two`, then call it from here.
 }
 
-function one () {
+function one() {
   // First, we have to find the element:
   var one = document.getElementById('one')
 
@@ -19,6 +20,10 @@ function one () {
 }
 
 // CREATE FUNCTION two HERE
+function two() {
+  var two = document.getElementById('two')
+  two.classList.add('green')
+}
 
 // CREATE FUNCTION three HERE
 
